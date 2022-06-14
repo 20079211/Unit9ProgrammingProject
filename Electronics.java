@@ -8,19 +8,6 @@ public class Electronics extends Product {
     charge = cha;
   }
 
-  public Electronics(boolean bI, double ch) {
-    batteryIncluded = bI;
-    if(batteryIncluded && (charge >= 0 && charge <= 100)) {
-      charge = ch;
-    }
-    else if (batteryIncluded) {
-      charge = 100.00;
-    }
-    else {
-      charge = 0.00;
-    }
-  }
-
   public Electronics() {
     batteryIncluded = false;
     charge = 0.00;
